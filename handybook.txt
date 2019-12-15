@@ -16,7 +16,7 @@ airmon-ng stop wlan0mon # 2.1.2 Managed (tutorial)
 ifconfig wlan0 down # 2.2.1 set interface down
 ip link set wlan0 down # or 2.2.1 set interface down
 iwconfig wlan0 mode monitor # 2.2.2 set mode monitor
-iwconfig wlan0 mode managed  # 2.2.3 set mode managed
+iwconfig wlan0 mode managed # 2.2.3 set mode managed
 ifconfig wlan0 up # 2.2.4 set interface up
 ip link set wlan0 up # or 2.2.4 set interface up
 
@@ -32,8 +32,8 @@ service network-manager start  # 4.1
 wireshark # 5.1
 
 ## 6. sniff directly
-airodump-ng wlan0 # 6.1
-airodump-ng --bssid xx:xx:xx:xx:xx:xx wlan0 --channel xx # 6.2 targeted sniff
+sudo airodump-ng wlan0 # 6.1
+sudo airodump-ng --bssid xx:xx:xx:xx:xx:xx wlan0 --channel xx # 6.2 targeted sniff
 
 ## 7. change MAC
 ifconfig wlan0 down # 7.1
