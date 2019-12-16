@@ -2,7 +2,7 @@
 
 function chap {
 	local chapnum=$1
-	grep " $chapnum." handybook.txt
+	grep " $chapnum\." handybook.txt
 }
 
 export -f chap
