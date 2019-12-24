@@ -43,4 +43,17 @@ ifconfig wlan0 up # 7.3
 ## 8. deauthentication/deauth atk
 aireplay-ng --deauth 2000 -a xx:xx:xx:xx:xx:xx -c xx:xx:xx:xx:xx:xx wlan0 # 8.1 deauth, -a:access point MAC, -c:client MAC
 
+## 9. proxychains
+sudo vi 9.1 /etc/proxychains.conf # 9.1 modify /etc/proxychains.conf
+# 9.2 always use SOCKS5
+# 9.3 comment strict_chain & uncomment dynamic_chain
+# 9.4 add SOCKS5 xxxxxxxx
 
+## 10. tor
+sudo apt-get install tor torbrowser-launcher # 10.1 (install tor)
+proxychains firefox www.duckduckgo.com # 10.2 start website with proxychains
+# 10.3 check DNS leak (search "check for DNS leak" or 'www.dnsleaktest.com'); standard test
+# 10.4 start other apps with prefix 'proxychains'
+# 10.5 set free socks5 proxy (search for "free sock5 proxy" or "sockslist.net/list/proxy-socks-5-list/"), relatively reliable countries: Netherlands!,Japan,China,Russia
+
+## TODO: webcrawling socks5 proxies (sockslist.net/list/proxy-socks-5-list/) 
