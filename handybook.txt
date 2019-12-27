@@ -54,6 +54,6 @@ sudo apt-get install tor torbrowser-launcher # 10.1 (install tor)
 proxychains firefox www.duckduckgo.com # 10.2 start website with proxychains
 # 10.3 check DNS leak (search "check for DNS leak" or 'www.dnsleaktest.com'); standard test
 # 10.4 start other apps with prefix 'proxychains'
-# 10.5 set free socks5 proxy (search for "free sock5 proxy" or "sockslist.net/list/proxy-socks-5-list/"), relatively reliable countries: Netherlands!,Japan,China,Russia
+# 10.5 set free socks5 proxy (search for "free socks5 proxy" or "sockslist.net/list/proxy-socks-5-list/"), relatively reliable countries: Netherlands!,Japan,China,Russia
 
 ## TODO: webcrawling socks5 proxies (sockslist.net/list/proxy-socks-5-list/) 
